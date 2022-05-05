@@ -5,11 +5,9 @@
   "main": "index.js",
   "type": "module",
   "lint": "./node_modules/.bin/eslint ./src",
-
   "pretty": "prettier --write '**/*.{js,json}' '!node_modules/**'",
   "scripts": {
-    "start": "node index.js",
-    "nodemonstart": "nodemon index.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -23,6 +21,7 @@
     "helmet": "^5.0.2",
     "mongoose": "^6.3.2",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
     "prettier": "^2.6.2"
   },
   "devDependencies": {
