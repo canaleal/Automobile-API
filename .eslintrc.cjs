@@ -4,12 +4,29 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'airbnb-base',
+    'plugin:react/recommended',
+    'airbnb',
   ],
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
   parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  plugins: [
+    'react',
+  ],
   rules: {
+    'linebreak-style': 0,
+    'react/prop-types': 'off',
   },
 };
